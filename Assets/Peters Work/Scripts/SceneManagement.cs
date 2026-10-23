@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class SceneManagement : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class SceneManagement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             MainObject.SetActive(true);
             PauseObject.SetActive(false);
