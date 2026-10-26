@@ -909,7 +909,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1777661661}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
-        m_MethodName: GameScene
+        m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4198,7 +4198,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1777661661}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
-        m_MethodName: GameScene
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4867,7 +4867,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1777661661}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
-        m_MethodName: GameScene
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5515,7 +5515,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1777661661}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
-        m_MethodName: GameScene
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
