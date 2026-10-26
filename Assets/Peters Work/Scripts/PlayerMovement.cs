@@ -17,16 +17,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector3 moveDirection = new Vector3(
-            moveInput.x,
-            0f,
-            moveInput.y
-        );
-        rb.linearVelocity = new Vector3(
-            moveDirection.x * moveSpeed,
-            rb.linearVelocity.y,
-            moveDirection.z * moveSpeed
-        );
+        Vector3 movement = new Vector3(moveInput.x, 0f, moveInput.y);
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
     public void Move(InputAction.CallbackContext context)
     {
