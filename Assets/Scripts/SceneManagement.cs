@@ -31,7 +31,7 @@ public class SceneManagement : MonoBehaviour
         if(Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             MainObject.SetActive(true);
-            PauseObject.SetActive(false);
+            PauseObject.SetActive(true);
             HTPObject.SetActive(false);
             CreditsObject.SetActive(false);
             WinObject.SetActive(false);
@@ -39,12 +39,22 @@ public class SceneManagement : MonoBehaviour
         }
     }
 
+    public void Resume() 
+    {
+        PauseObject.SetActive(false);
+    }
+
+    public void Pause()
+    {
+        PauseObject.SetActive(true);
+    }
+
     public void MenuScene()
     {
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void GameScene()
+    public void PlayGame()
     {
         SceneManager.LoadScene("TestScene");
     }
